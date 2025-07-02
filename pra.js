@@ -1,6 +1,6 @@
 let x,y,z;
 x=9;y=6;z=x+y; console.log('z');
-//alert(3+5)
+//alert(3+5)  it gives error because we are talking in nodeJs , there is another syntex in NodeJs
 //write(3+2);
 let a;
 a=122;
