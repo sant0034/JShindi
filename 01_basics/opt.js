@@ -29,9 +29,39 @@ let someNumber = 34;
 
 let stringNumber = String(someNumber);
 
-console.log(typeof stringNumber); // So here it convert internally also.
+// console.log(typeof stringNumber); // So here it convert internally also.
 
-console.log(stringNumber);
+// console.log(stringNumber);
+
+//   Operations
+
+let value = 3;
+
+let nevValue = -value;
+
+//console.log(nevValue);
+
+let a = 6
+
+let b = 3
+
+//console.log(a**b);
+
+let str1 = 'Hi'
+
+let str2 = " Pritam"
+
+// console.log(str1 + str2);
+
+console.log( 1 + "2");
+
+console.log( "1" + 2);
+
+console.log( "1" + "2");
+
+console.log( "1" + 2 + 2 );
+
+console.log( 1 + 2 + "2");
 
 
 
