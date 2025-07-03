@@ -96,25 +96,25 @@ is a multiple of 5 or not.  */
 // Question 2
 // Write a code which can give grades to students according to there score.
 
-let persent = 100
+let percent = 90;
 
-if ( 100 <= persent >= 80 ) {
-    console.log("Student get Grade A");
+if ( 100 >= percent && percent >= 80 ) {
+    console.log("Student get Grade A " +percent);
     
-} else if ( 79 <= persent >=70) {
-    console.log("Student get Grade B");
+} else if ( 79 >= percent && percent>=70) {
+    console.log("Student get Grade B " + percent);
     
-} else if ( 69<= persent >= 60) {
-    console.log("Student get Grade C");
+} else if ( 69>= percent && percent >= 60) {
+    console.log("Student get Grade C " + percent);
     
-} else if ( 59<= persent >=50) {
-    console.log("Student get Grade D");
+} else if ( 59>= percent && percent >=50) {
+    console.log("Student get Grade D " + percent);
     
-} else if ( 49 <= persent >=40){
-    console.log("Student get Fail");
+} else if ( 49 >= percent && percent>0){
+    console.log("Student get Fail " +percent);
     
 } else {
-    console.log("Student Grade not in Range");
+    console.log("Student Grade not in Range " +percent);
     
 }
 
