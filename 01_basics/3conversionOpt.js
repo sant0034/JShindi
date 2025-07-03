@@ -53,15 +53,56 @@ let str2 = " Pritam"
 
 // console.log(str1 + str2);
 
-console.log( 1 + "2");
+// console.log( 1 + "2");  // first number then string
 
-console.log( "1" + 2);
+// console.log( "1" + 2);  // first string 
 
-console.log( "1" + "2");
+// console.log( "1" + "2");  // string are added
 
-console.log( "1" + 2 + 2 );
+// console.log( "1" + 2 + 2 ); // first string 
 
-console.log( 1 + 2 + "2");
+// console.log( 1 + 2 + "2"); // first perform add then string
+
+// console.log( 3 * 8 + 6 % 3 / 9 ); // don't follow above way to add use bracket to perform action.
+
+// console.log(true);
+
+// console.log(+true); // this is conversion but don't follow this and below one
+
+// console.log(+" ");
+
+ let num1 , num2 , num3
+
+ num1 = num2 = num3  = 2 + 2  // but don't follow this rule
+
+// console.log(num1);
+
+// console.log(num2);
+
+// console.log(num3);
+
+let gameCounter = 100;
+
+console.log(gameCounter);
+
+console.log(gameCounter++);
+
+console.log(gameCounter);
+
+let gameChange = 99;
+
+console.log(gameChange);
+
+console.log(++gameChange);
+
+
+console.log(gameChange);
+
+
+
+
+
+
 
 
 
