@@ -62,7 +62,7 @@ JsUser.greeting = function(){
     console.log("Hello I am newly added function in object");
     
 }
-// obejct JsUser ke pass kon kon si property hai use access lene ke liye use karte hai
+// obejct JsUser ke pass kon kon si property hai use access lene ke liye use karte hai this keyword.
 JsUser.greetingTwo = function(){
     console.log(`Hello JS user , ${this.name}`);
     
