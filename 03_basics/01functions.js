@@ -7,7 +7,7 @@ function sayMyName() {
     console.log("A");
     console.log("M");  
 }
-//sayMyName // function referrence
+//sayMyName     // function referrence
 // sayMyName()  // function execute
 
 
@@ -74,6 +74,55 @@ function userOneMessage(message = 'Hi') {
     return `${message} I got`
 }
 // console.log(userOneMessage());  // output :- Hi I got
-console.log(userOneMessage("Pritam")); // this value override the message = Hi 
+//console.log(userOneMessage("Pritam")); // this value override the message = Hi 
+
+//Shopping card kitne argument aayege
+/*
+function calculateCardPrice(num1) {  
+    return num1
+}
+
+//console.log(calculateCardPrice(20)); // multiple value ho tab
+*/
+
+// here we pass multiple valuein function with rest operator
+function calculateCardPrice(...num1) {  //... ko hi kabhi ham rest bolte hai kabhi ham shop bolte hai base on use case
+    return num1
+}
+//console.log(calculateCardPrice(30 ,40, 700));  // output:- [ 30, 40, 700 ]  it return the value in Array 
+
+
+// How to pass object in fuction and how to use them
+
+/*
+const user = {
+    username: "Pritam",
+    price: 199
+}
+function handleObject(anyobject) {
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);  // here we take access of object through dot .
+    // ` ` typescript me data type automattly chech ho jati hai.
+}
+// handleObject(user)     // complusery pass the object
+// jaruri nahi hai ki pahale object create karke use pass karo direct bhi kar sakte hai like
+handleObject({
+    username: "Prit",
+    price: 384
+})
+
+*/
+
+
+
+// jaruri nahi hai object hi ho Arrays bhi pass kar sakte hai
+
+const myNewArray = [200 , 400 ,500, 8]
+function returnSecondValue(getArray) {
+    return getArray[3]
+}
+//console.log(returnSecondValue(myNewArray));
+// jaruri nahi hai Array ko pahale hi define karo then pass karo direct bhi kar sakte ho
+console.log(returnSecondValue([100,50000,23,45,76]));
+
 
 
