@@ -31,10 +31,43 @@ one()
 */
 
 // function ko aur kaise declare kar sakte specilly Arrow function ke through.
+/*
+const chai = function() {
+    let username = "Pritam"
+    console.log(this.username); // output:- undefined
+    
+}
+ chai()
+*/
+
+const chai = () => {   // this is an Arrow Function
+    username = "Pritama"
+    // console.log(this.username); // output:- undefined
+    // console.log(this);    // output:-  {} 
+    
+}
+//chai()
+
+// another new Arrow function add two number
+/*
+const addTwo = (num1 ,num2) => {  // so this is Explicit return example
+    return num1 + num2
+}
+console.log(addTwo(30000, 9))
+*/
 
 
+// another way to create Arrow function is and use ham bolte hai Implicit return
 
+const addTwoNum = (num1 , num2) =>  num1 + num2
+//console.log(addTwoNum( 200000 , 50));
 
+// or another way
+const addTwoNumber = (num1 , num2) => (num1 + num2) // this is also a Implicit return and yeha par to 
+// number return kar rahe hai
+//console.log(addTwoNumber( 4 , 8));
 
-
+// Agar hame object return karna ho to
+const useName = (num1, num2) => ({username: "Return object in arrow function implicit"})
+console.log(useName());
 
