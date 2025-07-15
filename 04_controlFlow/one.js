@@ -44,10 +44,75 @@ if (temperature === 41){
 const score = 200
 if( score > 100) {
     const power = "fly"
-    console.log(`User power is : ${power}`);
+    //console.log(`User power is : ${power}`);
     
 }
-console.log(`User power is: ${power}`);  // this line of code is not execute because power string variable is not in scope
+//console.log(`User power is: ${power}`);  // this line of code is not execute because power string variable is not in scope
+
+// var completely globle predefine.
+
+
+
+// Short hand notation
+// emplicit scope yeh ek hi line me execute hota multiple line execute nahi hoga.
+const balance = 1000
+//if (balance > 500) console.log("This is a explicit scope");
+// likh sakte hai par wah sahi habbit nahi hai
+const a = 200
+//if ( a < 300) console.log("yes a is less then 300") , console.log("Another line of code");
+
+
+
+// for checking multiple condition we use Nesting
+
+const run = 1000
+/*
+if (run < 500){
+    console.log("run less then 500");
+    
+}else if (run < 750){
+    console.log("run less then 750");
+    
+}else if (run < 900) {
+    console.log("run less then 900");
+    
+}else {
+    console.log("run less then 1200");
+    
+}
+*/
+
+
+// ------ Anothe code ----------
+
+const userLoggedIn = true
+const debitCard = true
+
+if (userLoggedIn && debitCard && 2===3) {
+    console.log(`Allow to buy courses`);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
