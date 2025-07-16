@@ -89,12 +89,12 @@ const userLoggedIn = true
 const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
-// ===============   AND Operation ====================
+// ===============   AND Operator ====================
 if (userLoggedIn && debitCard && 2===2) {
     console.log(`Allow to buy courses`);  
 }
 
-// +++++++++++++++++ OR Operation ++++++++++++++++++++++
+// +++++++++++++++++ OR Operator ++++++++++++++++++++++
 if (loggedInFromGoogle || loggedInFromEmail || '3'==='3'){
     console.log(`User logged in`);
     
