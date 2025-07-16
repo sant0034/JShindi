@@ -87,13 +87,18 @@ if (run < 500){
 
 const userLoggedIn = true
 const debitCard = true
-
-if (userLoggedIn && debitCard && 2===3) {
-    console.log(`Allow to buy courses`);
-    
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+// ===============   AND Operation ====================
+if (userLoggedIn && debitCard && 2===2) {
+    console.log(`Allow to buy courses`);  
 }
 
-
+// +++++++++++++++++ OR Operation ++++++++++++++++++++++
+if (loggedInFromGoogle || loggedInFromEmail || '3'==='3'){
+    console.log(`User logged in`);
+    
+}
 
 
 
