@@ -27,8 +27,8 @@ const newNums = myNums.filter((num) => num > 4 ) // forEach koe value return nah
 
 // Do in another way
 const newNums1 = myNums.filter((num) =>  {
-    // num > 4 // it gives [] arrays but if you want any value then you must have to below
-    // kyu ki scope open hai
+    // num > 4       // it gives [] arrays but if you want any value then you must have to below
+                     // kyu ki scope open hai
     //return num > 4
 })
 //console.log(newNums1);
@@ -56,8 +56,25 @@ const books = [
     {title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016},
     {title: 'Book Nine', genre: 'Non-Friction', publish: 1981, edition: 1989}
 ];
-// user bol raha hai ki above data me History ki book do only
-const userBooks = books.filter( (bk) => bk.genre === "History")
-console.log(userBooks);
+//Question:- user bol raha hai ki above data me History ki book do only
+const userBooks = books.filter( (bk) => bk.genre === "History") // yeha par scope open nahi hai to direct likh diye hai
+//console.log(userBooks);
+
+//Question:- user wah sari books do jo publish hue hai 2000 ke bad.
+const userBooks1=books.filter( (bk) => {
+    return bk.publish >= 2000}) // yeha scope hue kar rahe hai to 
+// return keyword use karna hona nahi to [] empty array dega
+//console.log(userBooks1);
+
+
+//Question:- user wah sari book do jo 1995 ki publish hue hai
+const userBooks2 = books.filter( (bk) => bk.publish >= 1995)
+// console.log(userBooks2);
+
+//Question:- user wah sari book do jo 1995 ki to publish to ho aur history ki book ho
+const userBooks3 = books.filter( (bk) => bk.publish >= 1995 && bk.genre==="History")
+console.log(userBooks3);
+
+
 
 
