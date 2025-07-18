@@ -1,4 +1,5 @@
 //+++++++++++++++++++++ map function +++++++++++++++++++++++++++++++++++
+// map function me ham for each wala operation bhi perform kar sakte hai filter bhi use karte hai.
 
 const myNumers = [1,2,3,4,5,6,7,8,9,10]
 const newNums = myNumers.map( (num) => num + 10) // it automatically return value means ye nahi ki print value nahi likhna padega
